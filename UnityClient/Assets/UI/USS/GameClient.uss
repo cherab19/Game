@@ -1,0 +1,46 @@
+.root {
+    flex-direction: column;
+    gap: 14px;
+    padding: 16px;
+    background-color: rgb(19, 25, 34);
+}
+
+.title {
+    font-size: 24px;
+    color: rgb(235, 244, 255);
+    unity-font-style: bold;
+}
+
+.panel {
+    background-color: rgb(30, 40, 54);
+    border-radius: 10px;
+    padding: 12px;
+    gap: 8px;
+}
+
+.panel-title {
+    color: rgb(159, 214, 255);
+    font-size: 16px;
+    unity-font-style: bold;
+}
+
+.row {
+    flex-direction: row;
+    gap: 8px;
+}
+
+.status {
+    color: rgb(197, 215, 231);
+    font-size: 12px;
+}
+
+.leaderboard {
+    color: rgb(233, 235, 237);
+    white-space: normal;
+    unity-text-align: upper-left;
+}
+
+.primary {
+    background-color: rgb(45, 135, 220);
+    color: white;
+}

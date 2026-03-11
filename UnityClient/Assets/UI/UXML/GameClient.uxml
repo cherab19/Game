@@ -1,0 +1,41 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+  <ui:VisualElement class="root">
+    <ui:Label text="Realtime Multiplayer Client" class="title" />
+
+    <ui:VisualElement class="panel">
+      <ui:Label text="Authentication" class="panel-title" />
+      <ui:TextField name="Username" label="Username" value="player" />
+      <ui:TextField name="Email" label="Email" value="player@example.com" />
+      <ui:TextField name="Password" label="Password" is-password-field="true" value="Password123" />
+      <ui:TextField name="DisplayName" label="Display Name" value="Player" />
+      <ui:VisualElement class="row">
+        <ui:Button name="LoginButton" text="Login" class="primary" />
+        <ui:Button name="RegisterButton" text="Register" />
+      </ui:VisualElement>
+      <ui:Label name="AuthStatus" text="Not authenticated" class="status" />
+    </ui:VisualElement>
+
+    <ui:VisualElement class="panel">
+      <ui:Label text="Matchmaking" class="panel-title" />
+      <ui:TextField name="Region" label="Region" value="us-east" />
+      <ui:TextField name="GameMode" label="Mode" value="deathmatch" />
+      <ui:IntegerField name="MaxPlayers" label="Max Players" value="4" />
+      <ui:VisualElement class="row">
+        <ui:Button name="JoinMatchButton" text="Join Lobby" class="primary" />
+        <ui:Button name="StartMatchButton" text="Start Match" />
+      </ui:VisualElement>
+      <ui:Label name="MatchStatus" text="Idle" class="status" />
+      <ui:Label name="RealtimeStatus" text="Realtime: Disconnected" class="status" />
+    </ui:VisualElement>
+
+    <ui:VisualElement class="panel">
+      <ui:Label text="Leaderboard" class="panel-title" />
+      <ui:VisualElement class="row">
+        <ui:Button name="RefreshLeaderboardButton" text="Refresh" class="primary" />
+        <ui:Button name="PostMatchResultButton" text="Post Match Result" />
+      </ui:VisualElement>
+      <ui:Label name="LeaderboardStatus" text="Waiting" class="status" />
+      <ui:Label name="LeaderboardBody" text="No data" class="leaderboard" />
+    </ui:VisualElement>
+  </ui:VisualElement>
+</ui:UXML>

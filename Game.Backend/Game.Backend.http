@@ -1,0 +1,23 @@
+@Game.Backend_HostAddress = https://localhost:7206
+
+POST {{Game.Backend_HostAddress}}/auth/register
+Content-Type: application/json
+
+{
+	"username": "player1",
+	"email": "player1@example.com",
+	"password": "Password123!",
+	"displayName": "Player One"
+}
+
+###
+
+POST {{Game.Backend_HostAddress}}/auth/login
+Content-Type: application/json
+
+{
+	"usernameOrEmail": "player1",
+	"password": "Password123!"
+}
+
+###
